@@ -10,7 +10,36 @@
         <title>Edit a Booking!</title>
     </head>
     <body>
-        
+        <br><br><br><br>
+        <div class="container" align="center">
+            <h1>Edit a Booking!</h1>
+        </div> 
+        <div class="jumbotron">
+            <form name="booking-edit" action="GL_booking_edit_processing.jsp" method="POST">
+                <!-- Booking ID Field -->
+                <div class="form-group row">
+                    <label class="col-2 col-form-label">Booking ID:</label>
+                    <div class="col-10">
+                      <input class="form-control" type="text" name="booking_id" placeholder="BO00001">
+                    </div><br>
+                    
+                     <!-- Edit Desired Class Offering -->
+                    <label class="col-2 col-form-label">Class Offering ID:</label>
+                    <div class="col-10">
+                        <input class="form-control" type="text" name="classoff_id" placeholder="CO00001">
+                    </div> <br>
+                    
+                     <!-- Edit Email -->
+                    <label class="col-2 col-form-label">Email:</label>
+                    <div class="col-10">
+                        <input class="form-control" type="text" name="email" placeholder="john_doe@gmail.com">
+                    </div>
+                    
+                </div>
+                <input type="submit" name="book_edit" value="Search"><br>
+            
+            </form>
+        </div>
         
         
         <footer align="left">

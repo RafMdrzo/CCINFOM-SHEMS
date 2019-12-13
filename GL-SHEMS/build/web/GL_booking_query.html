@@ -10,6 +10,25 @@
         <title>Booking: Search Query</title>
     </head>
     <body>
+        <br><br><br><br>
+        <div class="container" align="center">
+            <h1>Edit a Booking!</h1>
+        </div>
+        
+        <div class="jumbotron">
+            <form name="booking-edit" action="GL_booking_query_processing.jsp" method="POST">
+                <!-- Booking ID Field -->
+                <div class="form-group row">
+                    <label class="col-2 col-form-label">Booking ID:</label>
+                    <div class="col-10">
+                      <input class="form-control" type="text" name="booking_id" placeholder="BO00001">
+                    </div><br>
+                    
+                </div>
+                <input type="submit" name="book_query" value="Search"><br>
+            
+            </form>
+        </div>
         
         <footer align="left">
             <a class = "btn btn-link btn-sm" href="GL_landing.html" role="button">
